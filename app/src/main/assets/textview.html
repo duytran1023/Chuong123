@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TextView</title>
+</head>
+
+<body>
+    <h3>TextView</h3>
+    <b>TextView</b> là một View cho phép hiện thị các dòng chữ (text) trên màn hình, nó có nhiều thuộc tính tùy mục đích sử dụng mà áp dụng, như thiết lập cỡ chữ, font chữ, màu chữ...
+    <br><br>
+    <img src="data:image/png;base64,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"
+        alt="" />
+    <h2>Các thuộc tính của TextView trong Android</h2>
+
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th style="width: 25%;">Attribute</th>
+                <th>Miêu tả</th>
+            </tr>
+            <tr>
+                <td>android:id</td>
+                <td>Đây là ID mà nhận diện duy nhất Control</td>
+            </tr>
+            <tr>
+                <td>android:capitalize</td>
+                <td>
+                    Nếu được thiết lập, xác định rằng TextView này có một phương thức đầu vào thuần văn bản và nên tự động viết hoa nhưng gì người dùng soạn thảo:
+                </td>
+            </tr>
+            <tr>
+                <td>android:cursorVisible</td>
+                <td>
+                    Làm con trỏ là nhìn thấy (mặc định) hoặc không nhìn thấy. Mặc định là false
+                </td>
+            </tr>
+            <tr>
+                <td>android:editable</td>
+                <td>
+                    Nếu thiết lập là true, xác định rằng TextView này có một phương thức đầu vào
+                </td>
+            </tr>
+            <tr>
+                <td>android:fontFamily</td>
+                <td>Font family (được đặt tên bởi chuỗi) cho text</td>
+            </tr>
+            <tr>
+                <td>android:gravity</td>
+                <td>
+                    Xác định cách căn chỉnh text bởi trục x và/hoặc x của view khi text là nhỏ hơn view
+                </td>
+            </tr>
+            <tr>
+                <td>android:hint</td>
+                <td>Hiển thị text gợi ý khi text là trống</td>
+            </tr>
+            <tr>
+                <td>android:inputType</td>
+                <td>
+                    Kiểu dữ liệu đang được đặt vào một trường text. Phone, Date, Time, Number, Password ....
+                </td>
+            </tr>
+            <tr>
+                <td>android:maxHeight</td>
+                <td>Làm TextView có độ cao nhất với giá trị này</td>
+            </tr>
+            <tr>
+                <td>android:maxWidth</td>
+                <td>Làm TextView có độ rộng nhất với giá trị này</td>
+            </tr>
+            <tr>
+                <td>android:minHeight</td>
+                <td>Làm TextView có độ cao thấp nhất với giá trị này</td>
+            </tr>
+            <tr>
+                <td>android:minWidth</td>
+                <td>Làm TextView có độ rộng thấp nhất với giá trị này</td>
+            </tr>
+            <tr>
+                <td>android:password</td>
+                <td>
+                    Có hay không các ký tự của trường được hiển thị như là mật khẩu với dấu chấm thay cho chính nó. Giá trị có thể là "true" hoặc "false"
+                </td>
+            </tr>
+            <tr>
+                <td>android:phoneNumber</td>
+                <td>
+                    Nếu được thiết lập, xác định rằng TextView này có một phương thức đầu vào là số điện thoại. Giá trị có thể có là "true" hoặc "false".
+                </td>
+            </tr>
+            <tr>
+                <td>android:text</td>
+                <td>Text để hiển thị</td>
+            </tr>
+            <tr>
+                <td>android:textAllCaps</td>
+                <td>
+                    Hiển thị text trong dạng chữ hoa. Giá trị có thể có là "true" hoặc "false"
+                </td>
+            </tr>
+            <tr>
+                <td>android:textColor</td>
+                <td>
+                    Có thể là một giá trị màu, trong dạng "#rgb", "#argb", "#rrggbb", hoặc "#aarrggbb"
+                </td>
+            </tr>
+            <tr>
+                <td>android:textColorHighlight</td>
+                <td>Màu để làm nổi bật text đã chọn</td>
+            </tr>
+            <tr>
+                <td>android:textColorHint</td>
+                <td>
+                    Màu cho text gợi ý. Có thể là một giá trị màu, trong dạng "#rgb", "#argb", "#rrggbb", hoặc "#aarrggbb"
+                </td>
+            </tr>
+            <tr>
+                <td>android:textIsSelectable</td>
+                <td>
+                    Chỉ rằng nội dung của một text (mà không thể chỉnh sửa) có thể được lựa chọn. Giá trị có thể là "true" hoặc "false"
+                </td>
+            </tr>
+            <tr>
+                <td>android:textSize</td>
+                <td>
+                    Kích cỡ của text. Đề nghị là "sp" (viết tắt của scaled-pixels, ví dụ 15sp)
+                </td>
+            </tr>
+            <tr>
+                <td>android:textStyle</td>
+                <td>
+                    Phong cách (bold, italic, bolditalic) cho text. Bạn có thể sử dụng một hoặc nhiều giá trị sau đây, được phân biệt riêng rẽ bởi '|'.
+                    <ul class="list">
+                        <li>
+                            <p>normal - 0</p>
+                        </li>
+                        <p></p>
+                        <li>
+                            <p>bold - 1</p>
+                        </li>
+                        <p></p>
+                        <li>
+                            <p>italic - 2</p>
+                        </li>
+                        <p></p>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>android:typeface</td>
+                <td>
+                    Bề mặt text (normal, sans, serif, monospace). Bạn có thể sử dụng một hoặc nhiều giá trị sau đây, được phân biệt riêng rẽ bởi '|'.
+                    <ul class="list">
+                        <li>
+                            <p>normal - 0</p>
+                        </li>
+                        <p></p>
+                        <li>
+                            <p>sans - 1</p>
+                        </li>
+                        <p></p>
+                        <li>
+                            <p>serif - 2</p>
+                        </li>
+                        <p></p>
+                        <li>
+                            <p>monospace - 3</p>
+                        </li>
+                        <p></p>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

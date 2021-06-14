@@ -1,0 +1,63 @@
+<h2>MainActivity.java</h2>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.example.com.basicdemo.R</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v4.app.FragmentManager</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v4.app.FragmentTransaction</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v7.app.AppCompatActivity</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.View</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Button</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">ExampleChangeFragments</span> <span style="color: #008800; font-weight: bold">extends</span> AppCompatActivity <span style="color: #333333">{</span>
+        Button button<span style="color: #333333">;</span>
+        <span style="color: #333399; font-weight: bold">boolean</span> status <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">;</span>
+        <span style="color: #555555; font-weight: bold">@Override</span> 
+        <span style="color: #008800; font-weight: bold">protected</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onCreate</span><span style="color: #333333">(</span>Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+            <span style="color: #008800; font-weight: bold">super</span><span style="color: #333333">.</span><span style="color: #0000CC">onCreate</span><span style="color: #333333">(</span>savedInstanceState<span style="color: #333333">);</span> 
+            setContentView<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">example_change_fragments</span><span style="color: #333333">);</span> 
+            button <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">button</span><span style="color: #333333">);</span> 
+            button<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> View<span style="color: #333333">.</span><span style="color: #0000CC">OnClickListener</span><span style="color: #333333">()</span> <span style="color: #333333">{</span> 
+                <span style="color: #555555; font-weight: bold">@Override</span>
+                <span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onClick</span><span style="color: #333333">(</span>View v<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+                    FragmentManager manager <span style="color: #333333">=</span> getSupportFragmentManager<span style="color: #333333">();</span> 
+                    FragmentTransaction transaction <span style="color: #333333">=</span> manager<span style="color: #333333">.</span><span style="color: #0000CC">beginTransaction</span><span style="color: #333333">();</span> 
+                    <span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(!</span>status<span style="color: #333333">){</span> 
+                        Fragment_one fragmentOne <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Fragment_one<span style="color: #333333">();</span> 
+                        transaction<span style="color: #333333">.</span><span style="color: #0000CC">replace</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">frame_layout</span><span style="color: #333333">,</span> fragmentOne<span style="color: #333333">);</span> 
+                        transaction<span style="color: #333333">.</span><span style="color: #0000CC">commit</span><span style="color: #333333">();</span> 
+                        button<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Load Fragment Two&quot;</span><span style="color: #333333">);</span> 
+                        status <span style="color: #333333">=</span><span style="color: #008800; font-weight: bold">true</span><span style="color: #333333">;</span> 
+                    <span style="color: #333333">}</span><span style="color: #008800; font-weight: bold">else</span> <span style="color: #333333">{</span> 
+                        Fragment_two fragmentTwo <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Fragment_two<span style="color: #333333">();</span> 
+                        transaction<span style="color: #333333">.</span><span style="color: #0000CC">replace</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">frame_layout</span><span style="color: #333333">,</span> fragmentTwo<span style="color: #333333">);</span> 
+                        transaction<span style="color: #333333">.</span><span style="color: #0000CC">commit</span><span style="color: #333333">();</span> 
+                        button<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Load Fragment One&quot;</span><span style="color: #333333">);</span> status <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">;</span> 
+                    <span style="color: #333333">}</span> 
+                <span style="color: #333333">}</span> 
+            <span style="color: #333333">});</span> 
+        <span style="color: #333333">}</span>
+    <span style="color: #333333">}</span>
+    </pre></div>
+<h2>FragmentA.java</h2>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v4.app.Fragment</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.LayoutInflater</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.View</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.ViewGroup</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Fragment_one</span> <span style="color: #008800; font-weight: bold">extends</span> Fragment <span style="color: #333333">{</span> 
+        <span style="color: #555555; font-weight: bold">@Override</span> 
+        <span style="color: #008800; font-weight: bold">public</span> View <span style="color: #0066BB; font-weight: bold">onCreateView</span><span style="color: #333333">(</span>LayoutInflater inflater<span style="color: #333333">,</span> ViewGroup container<span style="color: #333333">,</span> Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+            <span style="color: #008800; font-weight: bold">return</span> inflater<span style="color: #333333">.</span><span style="color: #0000CC">inflate</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">fragment_one</span><span style="color: #333333">,</span> container<span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">);</span> <span style="color: #333333">}</span> 
+    <span style="color: #333333">}</span>
+    </pre></div>
+<h2>FragmentB.java</h2>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v4.app.Fragment</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.LayoutInflater</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.View</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.ViewGroup</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Fragment_two</span> <span style="color: #008800; font-weight: bold">extends</span> Fragment <span style="color: #333333">{</span>
+        <span style="color: #555555; font-weight: bold">@Override</span>
+        <span style="color: #008800; font-weight: bold">public</span> View <span style="color: #0066BB; font-weight: bold">onCreateView</span><span style="color: #333333">(</span>LayoutInflater inflater<span style="color: #333333">,</span> ViewGroup container<span style="color: #333333">,</span> Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+            <span style="color: #008800; font-weight: bold">return</span> inflater<span style="color: #333333">.</span><span style="color: #0000CC">inflate</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">fragment_two</span><span style="color: #333333">,</span> container<span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">);</span>
+        <span style="color: #333333">}</span>
+    <span style="color: #333333">}</span>
+    </pre></div>

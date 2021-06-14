@@ -1,0 +1,158 @@
+[
+  {
+    "mabaihoc": "C1_Gioi_thieu",
+    "tenbaihoc": "CHƯƠNG 1: THIẾT BỊ DI ĐỘNG",
+    "chuong": "true"
+  },
+
+  {
+    "mabaihoc": "C11_ThietBiDiDong",
+    "tenbaihoc": "Thiết bị di động",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C12_LTThietBiDiDong",
+    "tenbaihoc": "Lập trình TBDĐ",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C13_KienTrucAndroid",
+    "tenbaihoc": "Kiến trúc Android",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C14_MayAoDalvik",
+    "tenbaihoc": "Máy ảo Dalvik",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C15_CaiDatMoiTruong",
+    "tenbaihoc": "Cài đặt môi trường",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C16_TaoProj",
+    "tenbaihoc": "Tạo Project Android",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C17_LogToast",
+    "tenbaihoc": "Logcat và Toast",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "C18_CaiMayAo",
+    "tenbaihoc": "Cấu hình thiết bị ảo",
+    "chuong": "C1_Gioi_thieu"
+  },
+  {
+    "mabaihoc": "activity_fragment_intent",
+    "tenbaihoc": "CHƯƠNG 2: CÁC ACTIVITY, FRAGMENT VÀ INTENT",
+    "chuong": "true"
+  },
+  {
+    "mabaihoc": "activity",
+    "tenbaihoc": "Activity – Khái niệm",
+    "chuong": "activity_fragment_intent"
+  },
+  {
+    "mabaihoc": "intent",
+    "tenbaihoc": "Intent",
+    "chuong": "activity_fragment_intent"
+  },
+  {
+    "mabaihoc": "frg_java",
+    "tenbaihoc": "Fragment in Java",
+    "chuong": "activity_fragment_intent"
+  },
+  {
+    "mabaihoc": "frg_xml",
+    "tenbaihoc": "Fragment in XML",
+    "chuong": "activity_fragment_intent"
+  },
+  {
+    "mabaihoc": "xay_dung_giao_dien_nguoi_dung",
+    "tenbaihoc": "CHƯƠNG 3: XÂY DỰNG GIAO DIỆN NGƯỜI DÙNG",
+    "chuong": "true"
+  },
+  {
+    "mabaihoc": "textview",
+    "tenbaihoc": "TextView",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "edittext",
+    "tenbaihoc": "EditText",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "button",
+    "tenbaihoc": "Button",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "imagebutton",
+    "tenbaihoc": "ImageButton",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "checkbox",
+    "tenbaihoc": "Checkbox",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "togglebutton",
+    "tenbaihoc": "ToggleButton",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "processbar",
+    "tenbaihoc": "ProgressBar",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "timepicker",
+    "tenbaihoc": "TimePicker",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "datepicker",
+    "tenbaihoc": "DatePicker",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "linearlayout",
+    "tenbaihoc": "LinearLayout",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "relativelayout",
+    "tenbaihoc": "RelativeLayout",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "tablelayout",
+    "tenbaihoc": "TableLayout",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "absolutelayout",
+    "tenbaihoc": "AbsoluteLayout",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "framelayout",
+    "tenbaihoc": "FrameLayout",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "listview",
+    "tenbaihoc": "ListView",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  },
+  {
+    "mabaihoc": "gridview",
+    "tenbaihoc": "GridView",
+    "chuong": "xay_dung_giao_dien_nguoi_dung"
+  }
+]

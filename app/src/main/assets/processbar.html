@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TextView</title>
+
+</head>
+
+<body>
+    <h3>Progress Bar</h3>
+    Progress Bar được sử dụng để hiển thị tiến trình của một tác vụ. Ví dụ, khi bạn upload hoặc download cái gì từ internet, nó là tốt hơn khi hiển thị tiến trình upload/download tới người sử dụng. Ngoài các phương thức này, lớp ProgressDialog cũng cung cấp
+    một số phương thức khác được liệt kê trong bảng dưới đây: <br><br>
+
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 10%;">STT</th>
+            <th>Phương thức & Mô tả</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <b>getMax()</b>
+                <p>Phương thức này trả về giá trị lớn nhất của tiến trình</p>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <b>incrementProgressBy(int diff)</b>
+                <p>
+                    Phương thức này tăng (lượng gia) thanh tiến trình bởi các giá trị khác nhau được truyền như là một tham số
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <b>setIndeterminate(boolean indeterminate)</b>
+                <p>
+                    Phương thức này thiết lập indicator cho tiến trình dạng determinate hoặc indeterminate
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                <b>setMax(int max)</b>
+                <p>Thiết lập giá trị lớn nhất của Progress Dialog</p>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <b>setProgress(int value)</b>
+                <p>
+                    Được sử dụng để cập nhật Progress Dialog với một số giá trị cụ thể
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                <b>show(Context context, CharSequence title, CharSequence message)</b>
+                <p>
+                    Đây là một phương thức static, được sử dụng để hiển thị Progress Dialog
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <b>Ví dụ:</b> <br> Ví dụ sau minh họa Progress Dialog với chiều ngang. Để thử nghiệm ví dụ này, bạn cần chạy nó trên một thiết bị thực sự sau khi phát triển ứng dụng theo các bước như dưới đây.
+
+    <br><br>
+    <table class="table table-bordered">
+        <tr>
+            <th>Steps</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                Bạn sử dụng Android Studio để tạo một ứng dụng Android dưới một package là com.example.sairamkrishna.myapplication. Trong khi tạo project này, đảm bảo Target SDK và Compile With ở phiên bản Android SDK mới nhất để sử dụng API cấp độ cao hơn
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                Sửa đổi src/MainActivity.java file để thêm code hiển thị progress dialog
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sửa đổi res/layout/activity_main.xml file để thêm XML code</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Chạy ứng dụng và chọn một thiết bị Android và cài đặt ứng dụng trên đó rồi kiểm tra kết quả
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

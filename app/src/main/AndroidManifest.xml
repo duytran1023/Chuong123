@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.h2kl.hocandroid123">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".example.datepicker"></activity>
+        <activity android:name=".example.timepicker" />
+        <activity android:name=".example.progressbar" />
+        <activity android:name=".example.togglebutton" />
+        <activity android:name=".example.checkbox" />
+        <activity android:name=".example.imagebutton" />
+        <activity android:name=".example.button" />
+        <activity android:name=".example.edittext" />
+        <activity android:name=".example.textview">
+        </activity>
+        <activity android:name=".example.AbsoluteLayout" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".XemcodemauActivity" />
+        <activity android:name=".NhacNhoHocMainActivity" />
+        <activity android:name=".DsBaiHoc" />
+        <activity android:name=".DsCodeMau" />
+        <activity android:name=".CN6" />
+        <activity android:name=".XemTienTrinh" />
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".guithongbao" />
+    </application>
+
+</manifest>

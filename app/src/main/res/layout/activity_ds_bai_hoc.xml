@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DsBaiHoc"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txttientrinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã học:"
+            android:textSize="20dp"></TextView>
+        <ProgressBar
+            android:layout_margin="10dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/processbar"
+            android:max="100"
+            android:progress="0"
+            android:id="@+id/pgbTienTrinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ProgressBar>
+        <Button
+            android:id="@+id/btnTiepTuc"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            style="@style/button2"
+            android:text="Tiếp tục"></Button>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/lviewbai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"></ListView>
+    </ScrollView>
+
+</LinearLayout>

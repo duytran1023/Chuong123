@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemXML"
+        android:title="XML">
+    </item>
+    <item android:id="@+id/itemJAVA"
+        android:title="JAVA">
+    </item>
+    <item android:id="@+id/itemRUN"
+        android:title="RUN">
+    </item>
+</menu>

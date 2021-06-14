@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hướng dẫn học chương 1, 2, 3 môn Lập trình trên thiết bị di động</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_menu">Menu</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_example">Danh sách code mẫu</string>
+    <string name="nav_remind">Đặt lời nhắc</string>
+    <string name="nav_about">Giới thiệu</string>
+    <string name="nav_quiz">Đặt câu hỏi</string>
+    <string name="nav_exit">Thoát</string>
+</resources>

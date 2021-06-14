@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NhacNhoHocMainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhắc giờ học"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+    </TextView>
+    <TimePicker android:id="@+id/time_picker"
+        android:numbersTextColor="@color/mauchuong"
+        android:numbersInnerTextColor="#000"
+        android:numbersSelectorColor="@color/mauchuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"></TimePicker>
+    <Button android:id="@+id/simple_notification"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hẹn giờ"
+        style="@style/button"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true">
+    </Button>
+</LinearLayout>

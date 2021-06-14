@@ -1,0 +1,45 @@
+<h2>FrirstActivity.java</h2>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.content.Intent</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v7.app.AppCompatActivity</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.View</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Button</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FirstActivity</span> <span style="color: #008800; font-weight: bold">extends</span> AppCompatActivity <span style="color: #333333">{</span> 
+        <span style="color: #555555; font-weight: bold">@Override</span> 
+        <span style="color: #008800; font-weight: bold">protected</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onCreate</span><span style="color: #333333">(</span>Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+            <span style="color: #008800; font-weight: bold">super</span><span style="color: #333333">.</span><span style="color: #0000CC">onCreate</span><span style="color: #333333">(</span>savedInstanceState<span style="color: #333333">);</span> 
+            setContentView<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">activity_first</span><span style="color: #333333">);</span> 
+            Button button <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">button_first</span><span style="color: #333333">);</span> 
+            button<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> View<span style="color: #333333">.</span><span style="color: #0000CC">OnClickListener</span><span style="color: #333333">()</span> <span style="color: #333333">{</span> 
+                <span style="color: #555555; font-weight: bold">@Override</span> 
+                <span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onClick</span><span style="color: #333333">(</span>View v<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+                    Intent intent <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Intent<span style="color: #333333">(</span>FirstActivity<span style="color: #333333">.</span><span style="color: #0000CC">this</span><span style="color: #333333">,</span>SecondActivity<span style="color: #333333">.</span><span style="color: #0000CC">class</span><span style="color: #333333">);</span> 
+                    startActivity<span style="color: #333333">(</span>intent<span style="color: #333333">);</span> 
+                    finish<span style="color: #333333">();</span> 
+                <span style="color: #333333">}</span> 
+            <span style="color: #333333">});</span> 
+        <span style="color: #333333">}</span> 
+    <span style="color: #333333">}</span>
+    </pre></div>
+<h2>SecondActivity.java</h2>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.content.Intent</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.support.v7.app.AppCompatActivity</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.View</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Button</span><span style="color: #333333">;</span> 
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">SecondActivity</span> <span style="color: #008800; font-weight: bold">extends</span> AppCompatActivity <span style="color: #333333">{</span> 
+        <span style="color: #555555; font-weight: bold">@Override</span> <span style="color: #008800; font-weight: bold">protected</span> <span style="color: #333399; font-weight: bold">void</span> onCreate<span style="color: #333333">(</span>Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+            <span style="color: #008800; font-weight: bold">super</span><span style="color: #333333">.</span><span style="color: #0000CC">onCreate</span><span style="color: #333333">(</span>savedInstanceState<span style="color: #333333">);</span> 
+            setContentView<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">activity_second</span><span style="color: #333333">);</span> 
+            Button button <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">button_second</span><span style="color: #333333">);</span> 
+            button<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> View<span style="color: #333333">.</span><span style="color: #0000CC">OnClickListener</span><span style="color: #333333">()</span> <span style="color: #333333">{</span> 
+                <span style="color: #555555; font-weight: bold">@Override</span> 
+                <span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onClick</span><span style="color: #333333">(</span>View v<span style="color: #333333">)</span> <span style="color: #333333">{</span> 
+                    Intent intent <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Intent<span style="color: #333333">(</span>SecondActivity<span style="color: #333333">.</span><span style="color: #0000CC">this</span><span style="color: #333333">,</span>FirstActivity<span style="color: #333333">.</span><span style="color: #0000CC">class</span><span style="color: #333333">);</span> 
+                    startActivity<span style="color: #333333">(</span>intent<span style="color: #333333">);</span> 
+                    finish<span style="color: #333333">();</span> 
+                <span style="color: #333333">}</span> 
+            <span style="color: #333333">});</span> 
+        <span style="color: #333333">}</span> 
+    <span style="color: #333333">}</span> 
+    </pre></div>

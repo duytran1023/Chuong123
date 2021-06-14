@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TextView</title>
+
+</head>
+
+<body>
+    <h3>Time Picker</h3>
+    Time Picker trong Android cho phép bạn lựa chọn thời gian của ngày trong chế độ hoặc 24 h hoặc AM/PM. Thời gian bao gồm các định dạng hour, minute, và clock. Android cung cấp tính năng này thông qua lớp TimePicker.
+    <img src="data:image/png;base64,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"
+        alt="" />
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Stt</th>
+            <th>Phương thức &amp; Mô tả</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <b>is24HourView()</b>
+                <p>Phương thức này trả về true nếu trong 24h, nếu không là false</p>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <b>isEnabled()</b>
+                <p>Phương thức này trả về trạng thái kích hoạt cho view này</p>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <b>setCurrentHour(Integer currentHour)</b>
+                <p>Phương thức này thiết lập giờ hiện tại</p>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                <b>setCurrentMinute(Integer currentMinute)</b>
+                <p>Phương thức này thiết lập phút hiện tại</p>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <b>setEnabled(boolean enabled)</b>
+                <p>TPhương thức này thiết lập trạng thái kích hoạt cho view này</p>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                <b>setIs24HourView(Boolean is24HourView)</b>
+                <p>
+                    Phương thức này thiết lập có hay không trong chế độ 24 h hoặc chế độ AM/PM
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                <b>setOnTimeChangedListener(TimePicker.OnTimeChangedListener
+            onTimeChangedListener)</b>
+          <p>
+            Phương thức này thiết lập hàm callback mà chỉ rằng thời gian đã được
+            chỉnh sửa bởi người dùng
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

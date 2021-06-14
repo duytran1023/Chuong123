@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fragment in XML</title>
+</head>
+
+<body>
+    <h3>Fragments in XML</h3>
+    Bạn có thể nghĩ về fragment như một phần mô-đun của activity, có vòng lặp riêng, nhận các sự kiện đầu vào của riêng nó và bạn có thể thêm hoặc xóa trong khi activity đang chạy (giống như một "sub activity" mà bạn có thể tái sử dụng trong activity khác
+    nhau) Nói một cách đơn giản, chúng ta có thể nói "Fragment là một thành phần UI có thể sử dụng lại". Nó có vòng đời riêng và xử lý các sự kiện của riêng mình. Nó có thể được thêm hoặc loại bỏ trong khi activity chạy.
+    <p>Công dụng của Fragments</p>
+    <ol>
+        <li>Giao diện người dùng linh hoạt trên các kích thước màn hình khác nhau</li>
+        <li>Hiển thị tab Fixed/ Scrolling/ Swipe</li>
+        <li>Hộp thoại Dialog</li>
+        <li>Tùy chỉnh thanh điều khiển với các chế độ danh sách và tab</li>
+    </ol>
+
+    <p><b>Các bước để tạo Fragments trong XML Layout:</b>
+        <ol>
+            <li><b>Tạo class extends Fragment</b></li>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MyFragment</span> <span style="color: #008800; font-weight: bold">extends</span> Fragment
+            </pre></div><br>
+            <li><b>Tạo một tệp l hoặc các đối tượng java riêng biệt có chứa giao diện</b></li>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;FrameLayout</span> <span style="color: #0000CC">xmlns:android=</span><span style="background-color: #fff0f0">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+                <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+                <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+                <span style="color: #0000CC">xmlns:tools=</span><span style="background-color: #fff0f0">&quot;http://schemas.android.com/tools&quot;</span>
+                <span style="color: #0000CC">tools:context=</span><span style="background-color: #fff0f0">&quot;demo.arjun.com.fragmentapp.MyFragment&quot;</span>
+                <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/cdcd12121&quot;</span><span style="color: #007700">&gt;</span>
+                
+                <span style="color: #888888">&lt;!--TODO: Update blank fragment layout --&gt;</span>
+                <span style="color: #007700">&lt;TextView</span>
+                    <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+                    <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+                    <span style="color: #0000CC">android:text=</span><span style="background-color: #fff0f0">&quot;@string/hello_blank_fragment&quot;</span><span style="color: #007700">&gt;</span>
+                <span style="color: #007700">&lt;/TextView&gt;</span>
+            <span style="color: #007700">&lt;/FrameLayout&gt;</span>
+            </pre></div><br>
+            <li><b>Sử dụng phương thức OnCreate để liên kết appearance</b></li>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MyFragment</span> <span style="color: #008800; font-weight: bold">extends</span> Fragment <span style="color: #333333">{</span>
+                <span style="color: #008800; font-weight: bold">public</span> View <span style="color: #0066BB; font-weight: bold">onCreateView</span><span style="color: #333333">(</span>LayoutInflater inflater<span style="color: #333333">,</span> ViewGroup container<span style="color: #333333">,</span> Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+                <span style="color: #888888">//Inflate the layout for this fragment</span>
+                <span style="color: #008800; font-weight: bold">return</span> inflater<span style="color: #333333">.</span><span style="color: #0000CC">inflate</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">fragment_my</span><span style="color: #333333">,</span> container<span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">);</span>
+                    <span style="color: #333333">}</span>
+                <span style="color: #333333">}</span>
+                </pre></div><br>
+            <li><b>Đính kèm Fragment vào trong Activity qua XML</b></li>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;fragment</span> <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+                <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>   <span style="color: #0000CC">android:name=</span><span style="background-color: #fff0f0">&quot;demo.arjun.com.fragmentapp.MyFragment&quot;</span>
+                <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/myfragment&quot;</span><span style="color: #007700">&gt;</span>
+            <span style="color: #007700">&lt;/fragment&gt;</span>
+            </pre></div>
+
+        </ol>
+    </p>
+</body>
+
+</html>

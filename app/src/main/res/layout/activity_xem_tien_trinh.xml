@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/xemTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF3D00"
+        android:gravity="center"
+        android:text="Bạn đã học tới bài ..."
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnTT"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/xemTT"
+        android:text="Tiếp tục"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

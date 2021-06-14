@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TextView</title>
+
+</head>
+
+<body>
+
+    <h3>RelativeLayout</h3>
+    RelativeLayout trong Android cho phép bạn xác định vị trí các view con trong mối quan hệ cân xứng với nhau. Vị trí của mỗi view có thể được xác định tùy theo các phần tử an hem hoặc tùy theo phần tử cha.
+
+    <img src="data:image/jpeg;base64,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"
+        alt="">
+    <h3>Thuộc tính của RelativeLayout trong Android</h3>
+    <p>Bảng dưới liệt kê một số thuộc tính riêng cho RelativeLayout: &minus;</p>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width:25%">Attribute</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>android:id</td>
+            <td>Đây là ID mà nhận diện duy nhất Layout đó</td>
+        </tr>
+        <tr>
+            <td>android:gravity</td>
+            <td>Xác định cách một đối tượng nên đặt nội dung của nó trên cả hai tọa độ X và Y. Giá trị có thể có là top, bottom, left, right, center, center_vertical, center_horizontal ...</td>
+        </tr>
+        <tr>
+            <td>android:ignoreGravity</td>
+            <td>Chỉ rằng View nào không bị tác động bởi thuộc tính gravity</td>
+        </tr>
+    </table><br> Sử dụng RelativeLayout, bạn có thể căn chỉnh hai phần tử bởi đường viền phải, hoặc làm cho một phần tử ở dưới phần tử khác, đưa vào chính giữa màn hình, chính giữa trái, … Theo mặc định, tất cả view con được vẽ tại top-left của Layout, vì thế
+    bạn phải định nghĩa vị trí của mỗi view bởi sử dụng các thuộc tính đa dạng có sẵn từ lớp
+    <p>RelativeLayout.LayoutParams</p>Dưới đây là một số thuộc tính quan trọng: &minus;
+    <br>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width:25%">Attribute</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>android:layout_above</td>
+            <td>Đặt cạnh dưới của view này ở trên view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignBottom</td>
+            <td>Làm cạnh dưới của view này kết nối với cạnh dưới của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignLeft</td>
+            <td>Làm cạnh trái của view này kết nối với cạnh trái của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignParentBottom</td>
+            <td>Nếu true, làm cạnh dưới của view này kết nối với cạnh dưới của view cha. Phải là một giá trị Boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignParentEnd</td>
+            <td>Nếu true, làm cạnh cuối màn hình của view này kết nối với cạnh cuối màn hình của view cha. Phải là một giá trị Boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignParentLeft</td>
+            <td>Nếu true, làm cạnh trái của view này kết nối với cạnh trái của view cha. Phải là một giá trị Boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignParentRight</td>
+            <td>Nếu true, làm cạnh phải của view này kết nối với cạnh phải của view cha. Phải là một giá trị Boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignParentStart</td>
+            <td>Nếu true, làm cạnh đầu màn hình của view này kết nối với cạnh đầu màn hình của view cha. Phải là một giá trị Boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignParentTop</td>
+            <td>Nếu true, làm cạnh trên của view này kết nối với cạnh trên của view cha. Phải là một giá trị Boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignRight</td>
+            <td>Làm cạnh phải của view này kết nối với cạnh phải của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignStart</td>
+            <td>Làm cạnh đầu màn hình của view này kết nối với cạnh đầu màn hình của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_alignTop</td>
+            <td>Làm cạnh trên của view này kết nối với cạnh trên của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_below</td>
+            <td>Đặt cạnh trên của view này dưới view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_centerHorizontal</td>
+            <td>Nếu true, căn chỉnh giữa view con này theo chiều ngang bên trong view cha. Phải là một giá trị boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_centerInParent</td>
+            <td>Nếu true, căn chỉnh giữa view con này theo chiều ngang và dọc bên trong view cha. Phải là một giá trị boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_centerVertical</td>
+            <td>Nếu true, căn chỉnh giữa view con này theo chiều dọc bên trong view cha. Phải là một giá trị boolean, hoặc "true" hoặc "false"</td>
+        </tr>
+        <tr>
+            <td>android:layout_toEndOf</td>
+            <td>Đặt cạnh đầu màn hình của view này tới cạnh cuối màn hình của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_toLeftOf</td>
+            <td>Đặt cạnh phải của view này tới cạnh trái của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_toRightOf</td>
+            <td>Đặt cạnh trái của view này tới cạnh phải của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+        <tr>
+            <td>android:layout_toStartOf</td>
+            <td>Đặt cạnh cuối màn hình của view này tới cạnh đầu màn hình của view ID đã cho và phải là một tham chiếu tới resource khác, trong dạng "@[+][package:]type:name".</td>
+        </tr>
+    </table>
+</body>
+
+</html>

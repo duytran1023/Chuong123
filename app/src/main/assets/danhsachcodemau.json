@@ -1,0 +1,39 @@
+[
+
+  {
+    "macodemau": "textview",
+    "tencodemau": "TextView"
+  },
+  {
+    "macodemau": "edittext",
+    "tencodemau": "EditText"
+  },
+  {
+    "macodemau": "button",
+    "tencodemau": "Button"
+  },
+  {
+    "macodemau": "imagebutton",
+    "tencodemau": "ImageButton"
+  },
+  {
+    "macodemau": "checkbox",
+    "tencodemau": "Checkbox"
+  },
+  {
+    "macodemau": "togglebutton",
+    "tencodemau": "ToggleButton"
+  },
+  {
+    "macodemau": "progressbar",
+    "tencodemau": "ProgressBar"
+  },
+  {
+    "macodemau": "timepicker",
+    "tencodemau": "TimePicker"
+  },
+  {
+    "macodemau": "datepicker",
+    "tencodemau": "DatePicker"
+  }
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TextView</title>
+
+</head>
+
+<body>
+    <p><b>Absolute Layout</b></p>Absolute Layout trong Android giúp bạn xác định vị trí chính xác (các tọa độ x/y) của view con. Absolute Layout là ít linh động và khó duy trì hơn các loại Layout mà không có vị trí tuyệt đối khác.
+    <img src="data:image/png;base64,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"
+        alt="">
+    <p><b>Thuộc tính của AbsoluteLayout trong Android</b></p>
+    <p>Bảng sau liệt kê một số thuộc tính riêng cho AbsoluteLayout:</p>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width:25%">Attribute</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>android:id</td>
+            <td>Đây là ID mà nhận diện duy nhất Layout</td>
+        </tr>
+        <tr>
+            <td>android:layout_x</td>
+            <td>Xác định tọa độ x của view</td>
+        </tr>
+        <tr>
+            <td>android:layout_y</td>
+            <td>Xác định tọa độ y của view</td>
+        </tr>
+    </table>
+    <p><b>Một số Constructor chung</b></p>
+    <table class="table table-bordered">
+        <tr>
+            <td>AbsoluteLayout(Context context)</td>
+        </tr>
+        <tr>
+            <td>AbsoluteLayout(Context context, AttributeSet attrs)</td>
+        </tr>
+        <tr>
+            <td>AbsoluteLayout(Context context, AttributeSet attrs, int defStyleAttr)</td>
+        </tr>
+        <tr>
+            <td>AbsoluteLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes)</td>
+        </tr>
+    </table>
+</body>
+
+</html>

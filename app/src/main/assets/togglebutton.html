@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TextView</title>
+
+</head>
+
+<body>
+    <h3>ToggleButton</h3>
+    Một ToggleButton hiển thị các trạng thái checked/unchecked như một butto. Về cơ bản, nó là một on/off button với một light indicator.
+
+    <p>Thuộc tính của ToggleButton trong Android</p>
+
+    Bảng dưới liệt kê một số thuộc tính quan trọng liên quan tới ToggleButton Control. Bạn có thể kiểm tra Android Offical Documentation để có danh sách đầy đủ các thuộc tính và phương thức liên quan để thay đổi các thuộc tính này tại runtime.
+
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 25%;">Attribute</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>android:disabledAlpha</td>
+            <td>Đây là alpha để áp dụng cho indicator khi bị vô hiệu hóa</td>
+        </tr>
+        <tr>
+            <td>android:textOff</td>
+            <td>Đây là text cho nút khi nó không được checked</td>
+        </tr>
+        <tr>
+            <td>android:textOn</td>
+            <td>Đây là text cho nút khi nó được checked</td>
+        </tr>
+    </table>
+    <p>Kế thừa từ lớp <b>android.widget.TextView</b> &minus;</p>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 25%;">Attribute</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>android:autoText</td>
+            <td>
+                Nếu được thiết lập, xác định rằng TextView này có một phương thức đầu vào thuần văn bản và tự động sửa các lỗi chính tả phổ biến
+            </td>
+        </tr>
+        <tr>
+            <td>android:drawableBottom</td>
+            <td>Đây là drawable để được vẽ dưới text</td>
+        </tr>
+        <tr>
+            <td>android:drawableRight</td>
+            <td>Đây là drawable để được vẽ bên phải text</td>
+        </tr>
+        <tr>
+            <td>android:editable</td>
+            <td>
+                Nếu được thiết lập, xác định rằng TextView này có một phương thức đầu vào
+            </td>
+        </tr>
+        <tr>
+            <td>android:text</td>
+            <td>Đây là Text để hiển thị</td>
+        </tr>
+    </table>
+    <p>Kế thừa từ lớp <b>android.view.View</b></p>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 25%;">Attribute</th>
+            <th>Miêu tả</th>
+        </tr>
+        <tr>
+            <td>android:background</td>
+            <td>Đây là một drawable để sử dụng như background</td>
+        </tr>
+        <tr>
+            <td>android:contentDescription</td>
+            <td>
+                Thuộc tính này định nghĩa text mà miêu tả ngắn gọn nội dung của view.
+            </td>
+        </tr>
+        <tr>
+            <td>android:id</td>
+            <td>Cung cấp một id cho view</td>
+        </tr>
+        <tr>
+            <td>android:onClick</td>
+            <td>
+                Đây là tên của phương thức trong context của View này, để triệu hồi khi view được click
+            </td>
+        </tr>
+        <tr>
+            <td>android:visibility</td>
+            <td>Điều khiển tính nhìn thấy của view</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-size: 12pt;
+    font-family: Calibri;
+}
+
+p {
+    font-weight: bold;
+    color: blue;
+    font-weight: bold;
+}
+
+img,
+table {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+h1 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+h3 {
+    color: red;
+}
